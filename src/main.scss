@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+}
+
+body {
+    display: block;
+    width: 100vw;
+}
+
+.control-game {
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    display: block;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: crosshair;
+}
+
+.control-nav {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+
+    span {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        input {
+            width: 50px;
+        }
+    }
+}
+
+.game-field {
+    display: block;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+}

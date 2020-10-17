@@ -1,6 +1,7 @@
 import clearControlNav from './helpers/clearControlNav';
 import clearFields from './helpers/clearFields';
 import handleTime from './handlers/handleTime';
+import { startApp } from '../index';
 
 export default({
     gameTime,
@@ -54,10 +55,7 @@ export default({
 
         //Reset button control
         } else {
-            countdown = clearControlNav(gameBoard, scoreboard, gameTime);
-            handleTime(countdown, timer);
-
-            e.target.innerHTML = 'Start Game';
+            startApp();
         }
     };
 };

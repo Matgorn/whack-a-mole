@@ -8,11 +8,17 @@ import runSettings from './app/runSettings';
 import gameSettings from './app/gameSettings';
 
 //Run settings
-runSettings({
-	createLayout,
-	handleControl,
-	handleTime,
-	placeMole,
-	runApp,
-	gameSettings,
-});
+function startApp() {
+	runSettings({
+		createLayout,
+		handleControl,
+		handleTime,
+		placeMole,
+		runApp,
+		gameSettings,
+	});
+};
+
+startApp();
+
+export { startApp } ;

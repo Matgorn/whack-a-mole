@@ -14,9 +14,9 @@ export default () => {
                 <span>
                     <h2>Set countdown</h2>
                     <input id="countdown" name="countdown" type="number" size="3">
-                    <label for="countdown"> seconds</label>
+                    <label id="countdown-label" for="countdown"> seconds</label>
                 </span>
-                <button class="load-game">Load Game</button>
+                <button class="load-game control-game">Load Game</button>
             </div>
         </div>
     `
